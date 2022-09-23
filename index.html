@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QTrip</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/styles.css" />
 
   <!-- TODO: MODULE_LAYOUT -->
@@ -18,19 +19,54 @@
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
 
-   <nav></nav> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">QTrip</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav d-flex justify-content-end w-100">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/adventures/">Explore</a>
+              </li>
+            </ul>
+         </div>
+  </nav>
 
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on the hero image container element. -->
   <!-- 2. Add child elements as required. -->
 
-   <div class="hero-image d-flex"></div> 
+   <div class="hero-image">
+      <div class=" pt-5 ">
+        <h1 class="d-flex justify-content-center pt-5" style="color:white">Welcome to QTrip</h1>
+        <p class="hero-subheading" style="color:white">
+        Explore the world with fantastic places to venture around</p>
+        <div class="d-flex justify-content-center">
+        <input class="hero-input " placeholder="Search a City" />
+        </div>
+      </div>
 
+   </div> 
+   
 
-  <div class="container">
+  <div class="container d-flex justify-content-around">
     <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Create the grid like layout as required. -->
+    <div class="row mt-2 vw-100 ">
+      <div class="col-lg-3 col-xs-12 col-sm-6 py-2"><a href="/pages/adventures/index.html">Bengaluru</a></div>
+      <div class="col-lg-3 col-xs-12 col-sm-6 py-2"><a href="#">Dubai</a></div>
+      <div class="col-lg-3 col-xs-12 col-sm-6 py-2"><a href="#">Goa</a></div>
+      <div class="col-lg-3 col-xs-12 col-sm-6 py-2"><a href="#">Kolkata</a></div>
+      <div class="col-lg-3 col-xs-12 col-sm-6 py-2"><a href="#">Malaysia</a></div>
+      <div class="col-lg-3 col-xs-12 col-sm-6 py-2"><a href="#">Mumbai</a></div>
+      <div class="col-lg-3 col-xs-12 col-sm-6 py-2"><a href="#">Paris</a></div>
+      <div class="col-lg-3 col-xs-12 col-sm-6 py-2"><a href="#">Singapore</a></div>
+    </div>
   </div>
 
   <footer>
@@ -39,7 +75,7 @@
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- Add scripts needed for bootstrap to work -->
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
