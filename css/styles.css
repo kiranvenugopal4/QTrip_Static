@@ -60,6 +60,8 @@ footer {
   position: relative;
   display: flex;
   justify-content: center;
+
+ 
   
  
  
@@ -90,7 +92,7 @@ footer {
   letter-spacing: 2px;
   justify-content: center !important;
   bottom:0px;
-  overflow: hidden;
+  /* overflow: hidden; */
   
 }
 
@@ -135,14 +137,31 @@ footer {
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  border-radius: 10px;
+  
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  height: 298px;
+  width: auto;
+  object-fit: cover;
+ 
 }
+
+p{
+  font-weight: 700;
+}
+
+h5{
+  font-weight: 700 !important;
+}
+
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  filter: brightness(60%);
+  
 }
 
 /* ================================== */
@@ -178,4 +197,9 @@ footer {
 
 .col-lg-3{
   max-width: 290px;
+
+}
+
+.navbar{
+  padding-left: 12px;
 }
